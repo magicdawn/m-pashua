@@ -1,18 +1,13 @@
 {
   "include": ["src/**/*"],
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "lib",
-    "allowSyntheticDefaultImports": true,
+    "target": "ES2024",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "noImplicitOverride": true,
     "esModuleInterop": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "target": "ES2020",
-    "module": "CommonJS",
-    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true
-  },
-  "ts-node": {
-    "swc": true
   }
 }

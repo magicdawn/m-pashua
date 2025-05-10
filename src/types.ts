@@ -1,7 +1,26 @@
 // file:///Applications/Pashua.app/Contents/Resources/Documentation.html
 
+export type ComponentType<IdType extends string = string> =
+  | WindowProps
+  | ButtonProps<IdType>
+  | CancelButtonProps<IdType>
+  | DefaultButtonProps<IdType>
+  | CheckboxProps<IdType>
+  | ComboboxProps<IdType>
+  | DateProps<IdType>
+  | ImageProps<IdType>
+  | OpenBrowserProps<IdType>
+  | SaveBrowserProps<IdType>
+  | PasswordProps<IdType>
+  | PopupProps<IdType>
+  | RadioButtonProps<IdType>
+  | TextProps<IdType>
+  | TextboxProps<IdType>
+  | TextfieldProps<IdType>
+
 /** Window attributes */
 export type WindowProps = {
+  type: 'window'
   /** Window title */
   title?: string
   /** Window width */
@@ -15,9 +34,9 @@ export type WindowProps = {
 }
 
 /** Button component */
-export type ButtonProps = {
+export type ButtonProps<IdType extends string = string> = {
   /** Unique identifier for the button */
-  id: string
+  id: IdType
   /** Button label text */
   label: string
   /** X-coordinate position */
@@ -33,9 +52,9 @@ export type ButtonProps = {
 }
 
 /** Cancel Button component */
-export type CancelButtonProps = {
+export type CancelButtonProps<IdType extends string = string> = {
   /** Unique identifier for the cancel button */
-  id: string
+  id: IdType
   /** Button label text */
   label: string
   /** X-coordinate position */
@@ -51,9 +70,9 @@ export type CancelButtonProps = {
 }
 
 /** Default Button component */
-export type DefaultButtonProps = {
+export type DefaultButtonProps<IdType extends string = string> = {
   /** Unique identifier for the default button */
-  id: string
+  id: IdType
   /** Button label text */
   label: string
   /** X-coordinate position */
@@ -69,9 +88,9 @@ export type DefaultButtonProps = {
 }
 
 /** Checkbox component */
-export type CheckboxProps = {
+export type CheckboxProps<IdType extends string = string> = {
   /** Unique identifier for the checkbox */
-  id: string
+  id: IdType
   /** Checkbox label text */
   label: string
   /** Initial checkbox state */
@@ -85,9 +104,9 @@ export type CheckboxProps = {
 }
 
 /** Combobox component */
-export type ComboboxProps = {
+export type ComboboxProps<IdType extends string = string> = {
   /** Unique identifier for the combobox */
-  id: string
+  id: IdType
   /** Combobox label text */
   label?: string
   /** List of options */
@@ -103,9 +122,9 @@ export type ComboboxProps = {
 }
 
 /** Date component */
-export type DateProps = {
+export type DateProps<IdType extends string = string> = {
   /** Unique identifier for the date input */
-  id: string
+  id: IdType
   /** Date input label text */
   label?: string
   /** Default date */
@@ -123,9 +142,9 @@ export type DateProps = {
 }
 
 /** Image component */
-export type ImageProps = {
+export type ImageProps<IdType extends string = string> = {
   /** Unique identifier for the image */
-  id: string
+  id: IdType
   /** Path to the image file */
   path: string
   /** X-coordinate position */
@@ -137,9 +156,9 @@ export type ImageProps = {
 }
 
 /** Open Browser component */
-export type OpenBrowserProps = {
+export type OpenBrowserProps<IdType extends string = string> = {
   /** Unique identifier for the open browser */
-  id: string
+  id: IdType
   /** Label text */
   label?: string
   /** Default path */
@@ -153,9 +172,9 @@ export type OpenBrowserProps = {
 }
 
 /** Save Browser component */
-export type SaveBrowserProps = {
+export type SaveBrowserProps<IdType extends string = string> = {
   /** Unique identifier for the save browser */
-  id: string
+  id: IdType
   /** Label text */
   label?: string
   /** Default path */
@@ -169,9 +188,9 @@ export type SaveBrowserProps = {
 }
 
 /** Password component */
-export type PasswordProps = {
+export type PasswordProps<IdType extends string = string> = {
   /** Unique identifier for the password input */
-  id: string
+  id: IdType
   /** Label text */
   label?: string
   /** Default password text */
@@ -185,9 +204,9 @@ export type PasswordProps = {
 }
 
 /** Popup component */
-export type PopupProps = {
+export type PopupProps<IdType extends string = string> = {
   /** Unique identifier for the popup */
-  id: string
+  id: IdType
   /** Label text */
   label?: string
   /** List of options */
@@ -203,9 +222,9 @@ export type PopupProps = {
 }
 
 /** Radio Button component */
-export type RadioButtonProps = {
+export type RadioButtonProps<IdType extends string = string> = {
   /** Unique identifier for the radio button */
-  id: string
+  id: IdType
   /** Label text */
   label?: string
   /** List of options */
@@ -221,9 +240,9 @@ export type RadioButtonProps = {
 }
 
 /** Text component */
-export type TextProps = {
+export type TextProps<IdType extends string = string> = {
   /** Unique identifier for the text */
-  id: string
+  id: IdType
   /** Text content */
   default: string
   /** X-coordinate position */
@@ -235,9 +254,9 @@ export type TextProps = {
 }
 
 /** Textbox component */
-export type TextboxProps = {
+export type TextboxProps<IdType extends string = string> = {
   /** Unique identifier for the textbox */
-  id: string
+  id: IdType
   /** Label text */
   label?: string
   /** Default text content */
@@ -253,9 +272,9 @@ export type TextboxProps = {
 }
 
 /** Textfield component */
-export type TextfieldProps = {
+export type TextfieldProps<IdType extends string = string> = {
   /** Unique identifier for the textfield */
-  id: string
+  id: IdType
   /** Label text */
   label?: string
   /** Default text content */
