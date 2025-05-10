@@ -1,7 +1,7 @@
 // file:///Applications/Pashua.app/Contents/Resources/Documentation.html
 
 /** Window attributes */
-interface WindowProps {
+export type WindowProps = {
   /** Window title */
   title?: string
   /** Window width */
@@ -15,7 +15,7 @@ interface WindowProps {
 }
 
 /** Button component */
-interface ButtonProps {
+export type ButtonProps = {
   /** Unique identifier for the button */
   id: string
   /** Button label text */
@@ -33,7 +33,7 @@ interface ButtonProps {
 }
 
 /** Cancel Button component */
-interface CancelButtonProps {
+export type CancelButtonProps = {
   /** Unique identifier for the cancel button */
   id: string
   /** Button label text */
@@ -51,7 +51,7 @@ interface CancelButtonProps {
 }
 
 /** Default Button component */
-interface DefaultButtonProps {
+export type DefaultButtonProps = {
   /** Unique identifier for the default button */
   id: string
   /** Button label text */
@@ -69,7 +69,7 @@ interface DefaultButtonProps {
 }
 
 /** Checkbox component */
-interface CheckboxProps {
+export type CheckboxProps = {
   /** Unique identifier for the checkbox */
   id: string
   /** Checkbox label text */
@@ -85,7 +85,7 @@ interface CheckboxProps {
 }
 
 /** Combobox component */
-interface ComboboxProps {
+export type ComboboxProps = {
   /** Unique identifier for the combobox */
   id: string
   /** Combobox label text */
@@ -103,7 +103,7 @@ interface ComboboxProps {
 }
 
 /** Date component */
-interface DateProps {
+export type DateProps = {
   /** Unique identifier for the date input */
   id: string
   /** Date input label text */
@@ -123,7 +123,7 @@ interface DateProps {
 }
 
 /** Image component */
-interface ImageProps {
+export type ImageProps = {
   /** Unique identifier for the image */
   id: string
   /** Path to the image file */
@@ -137,7 +137,7 @@ interface ImageProps {
 }
 
 /** Open Browser component */
-interface OpenBrowserProps {
+export type OpenBrowserProps = {
   /** Unique identifier for the open browser */
   id: string
   /** Label text */
@@ -153,7 +153,7 @@ interface OpenBrowserProps {
 }
 
 /** Save Browser component */
-interface SaveBrowserProps {
+export type SaveBrowserProps = {
   /** Unique identifier for the save browser */
   id: string
   /** Label text */
@@ -169,7 +169,7 @@ interface SaveBrowserProps {
 }
 
 /** Password component */
-interface PasswordProps {
+export type PasswordProps = {
   /** Unique identifier for the password input */
   id: string
   /** Label text */
@@ -185,7 +185,7 @@ interface PasswordProps {
 }
 
 /** Popup component */
-interface PopupProps {
+export type PopupProps = {
   /** Unique identifier for the popup */
   id: string
   /** Label text */
@@ -203,7 +203,7 @@ interface PopupProps {
 }
 
 /** Radio Button component */
-interface RadioButtonProps {
+export type RadioButtonProps = {
   /** Unique identifier for the radio button */
   id: string
   /** Label text */
@@ -221,7 +221,7 @@ interface RadioButtonProps {
 }
 
 /** Text component */
-interface TextProps {
+export type TextProps = {
   /** Unique identifier for the text */
   id: string
   /** Text content */
@@ -235,7 +235,7 @@ interface TextProps {
 }
 
 /** Textbox component */
-interface TextboxProps {
+export type TextboxProps = {
   /** Unique identifier for the textbox */
   id: string
   /** Label text */
@@ -253,7 +253,7 @@ interface TextboxProps {
 }
 
 /** Textfield component */
-interface TextfieldProps {
+export type TextfieldProps = {
   /** Unique identifier for the textfield */
   id: string
   /** Label text */
@@ -268,23 +268,4 @@ interface TextfieldProps {
   y?: number
   /** Textfield type */
   type: 'textfield'
-}
-
-export type {
-  WindowProps,
-  ButtonProps,
-  CancelButtonProps,
-  DefaultButtonProps,
-  CheckboxProps,
-  ComboboxProps,
-  DateProps,
-  ImageProps,
-  OpenBrowserProps,
-  SaveBrowserProps,
-  PasswordProps,
-  PopupProps,
-  RadioButtonProps,
-  TextProps,
-  TextboxProps,
-  TextfieldProps,
 }
