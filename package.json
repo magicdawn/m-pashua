@@ -1,6 +1,6 @@
 {
   "name": "m-pashua",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "pashua with typescript",
   "type": "module",
   "files": [
