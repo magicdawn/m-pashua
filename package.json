@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "pashua with typescript",
   "type": "module",
+  "files": [
+    "dist/"
+  ],
   "exports": {
     "./package.json": "./package.json",
     ".": {
